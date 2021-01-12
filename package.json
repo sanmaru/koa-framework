@@ -5,10 +5,25 @@
   "repository": "git@github.com-san:sanmaru/koa-framework.git",
   "author": "sanmaru <moni.sanmaru@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "build": "tsc"
+  },
   "dependencies": {
     "koa": "^2.13.1"
   },
   "devDependencies": {
-    "jest": "^26.6.3"
-  } 
+    "@types/koa": "^2.11.6",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
 }
