@@ -13,5 +13,14 @@
     "max-len": [2, 120, 2],
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "import/no-unresolved": ["error", { "ignore": ["rootImportRegex"] }]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "import/no-unresolved": "off",
+        "import/extensions": "off"
+      }
+    }
+  ]
 }

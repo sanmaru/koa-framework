@@ -1,8 +1,8 @@
-import dotenv from "dotenv";
+import dotenv from 'dotenv';
 
 dotenv.config();
 
-const env: string = process.env.NODE_ENV || "localhost";
+const env: string = process.env.NODE_ENV || 'localhost';
 
 const configs: any = {
   base: {
