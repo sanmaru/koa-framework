@@ -1,14 +1,12 @@
 import Koa from 'koa';
-import Router from 'koa-router';
+import logger from 'koa-logger';
+import routes from './configuration/routes';
 
 const app = new Koa();
-const router = new Router();
 
-router.get('/', (ctx: Koa.Context) => {
-  ctx.status = 200;
-  ctx.body = 'Hello Koa';
-});
+// koa-logger 설정은 순서가 중요함 router 아래로 갈 경우 로그를 출력하지 않음
+app.use(logger());
 
-app.use(router.routes());
+app.use(routes.routes());
 
 export default app;

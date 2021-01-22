@@ -1,4 +1,4 @@
-import config from './config';
+import config from './configuration/config';
 import app from './app';
 
 console.log('KOA Module Start');
