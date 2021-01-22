@@ -22,9 +22,10 @@
   },
   "jest": {
     "collectCoverageFrom": [
+      "<rootDir>/src/**/*.ts",
       "!<rootDir>/dist/**",
-      "<rootDir>/src/**",
-      "<rootDir>/app.test.ts"
+      "!<rootDir>/src/server.ts",
+      "!<rootDir>/src/config/index.ts"
     ]
   },
   "dependencies": {
