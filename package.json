@@ -6,7 +6,9 @@
   "author": "sanmaru <moni.sanmaru@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "tslint": "tslint 'src/**/*.ts'",
+    "lint": "yarn tslint && yarn eslint",
     "test": "jest --collectCoverage --forceExit",
     "dev": "ts-node src/server.ts",
     "start": "tsc && node dist/server.js",
@@ -19,7 +21,11 @@
     }
   },
   "jest": {
-    "collectCoverageFrom": ["!<rootDir>/dist/**","<rootDir>/src/**","<rootDir>/app.test.ts"]
+    "collectCoverageFrom": [
+      "!<rootDir>/dist/**",
+      "<rootDir>/src/**",
+      "<rootDir>/app.test.ts"
+    ]
   },
   "dependencies": {
     "@babel/plugin-transform-regenerator": "^7.12.1",
@@ -51,6 +57,8 @@
     "supertest": "^6.1.1",
     "ts-jest": "^26.4.4",
     "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "tslint-config-alloy": "^0.2.1",
     "typescript": "^4.1.3"
   }
 }

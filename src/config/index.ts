@@ -21,6 +21,6 @@ const configs: any = {
     port: 4000,
   },
 };
-const config = Object.assign(configs.base, configs[env]);
+const config = { ...configs.base, ...configs[env] };
 
 export default config;
