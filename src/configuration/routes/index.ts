@@ -1,12 +1,12 @@
 import Router from 'koa-router';
 import Koa from 'koa';
-import logger from 'koa-logger';
+import { logging } from '../logger';
 
 const routes = new Router();
 
 routes.get('/', (ctx: Koa.Context) => {
   ctx.status = 200;
-  ctx.body = 'Hello Koa2';
+  ctx.body = 'Hello Koa';
 });
 
 export default routes;

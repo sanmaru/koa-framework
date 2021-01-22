@@ -10,7 +10,7 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "max-len": [2, 120, 2],
+    "max-len": [2, 150, 2],
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "import/extensions": ["warn"],
     "import/no-unresolved": ["warn", { "ignore": ["rootImportRegex"] }]

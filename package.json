@@ -23,7 +23,7 @@
   "jest": {
     "collectCoverageFrom": [
       "<rootDir>/src/**/*.ts",
-      "!<rootDir>/dist/**",
+      "!<rootDir>/dist/**/*.js",
       "!<rootDir>/src/server.ts",
       "!<rootDir>/src/configuration/**/*.ts"
     ],
