@@ -11,8 +11,6 @@ const publicController = (ctx: Koa.Context) => {
 
     default:
       ctx.status = 404;
-      ctx.body = 'Hello public controller 404';
-      logging.info('test error');
       break;
   }
 };

@@ -11,8 +11,6 @@ const apiController = (ctx: Koa.Context) => {
 
     default:
       ctx.status = 404;
-      ctx.body = 'Hello api controller 404';
-      logging.info('test error');
       break;
   }
 };
