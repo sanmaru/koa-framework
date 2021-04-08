@@ -1,13 +1,8 @@
 import Router from 'koa-router';
-import Koa from 'koa';
-import { logging } from '../../logger';
+import apiController from '../../../controllers/api';
 
 const router = new Router();
 
-router.get('/', (ctx: Koa.Context) => {
-  ctx.status = 200;
-  ctx.body = 'Hello api';
-  logging.info('test');
-});
+router.get('/', apiController);
 
 export default router.routes();
