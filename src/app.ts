@@ -1,4 +1,5 @@
 import Koa from 'koa';
+//import { customLogger, logging } from './configuration/logger';
 import { customLogger, logging } from './configuration/logger';
 import routes from './configuration/routes';
 
