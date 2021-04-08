@@ -5,7 +5,7 @@ const publicController = (ctx: Koa.Context) => {
   switch (ctx.request.method) {
     case 'GET':
       ctx.status = 200;
-      ctx.body = 'Hello public controller2';
+      ctx.body = 'Hello public controller';
       logging.info('test');
       break;
 
