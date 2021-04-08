@@ -10,6 +10,4 @@ router.get('/', (ctx: Koa.Context) => {
   logging.info('test');
 });
 
-
-export default router.routes() ;
-
+export default router.routes();
