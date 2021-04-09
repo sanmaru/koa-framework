@@ -3,6 +3,6 @@ import privateController from '../../../controllers/private';
 
 const router = new Router();
 
-router.get('/', privateController);
+router.get('/', privateController.get);
 
 export default router.routes();

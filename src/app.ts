@@ -1,5 +1,5 @@
 import Koa from 'koa';
-import { customLogger, logging } from './configuration/logger';
+import { customLogger } from './configuration/logger';
 import routes from './configuration/routes';
 
 const app = new Koa();
