@@ -3,6 +3,7 @@ import { logging } from './configuration/logger';
 import app from './app';
 
 console.log('KOA Module Start');
+console.log('changflag: ', 5);
 
 switch (config.env) {
   case 'localhost':
